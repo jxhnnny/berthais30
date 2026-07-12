@@ -188,6 +188,13 @@ h1{
 
 /* video cards */
 video{background:#000}
+/* gentle levitation once a video card has revealed */
+.levi.in{animation:levi 6.5s ease-in-out var(--ld,0s) infinite}
+.levi .frame{box-shadow:0 46px 90px -28px rgba(0,0,0,.85),0 0 46px -10px rgba(212,175,55,.22),0 0 0 1px rgba(212,175,55,.16)}
+@keyframes levi{
+  0%,100%{transform:translateY(0) rotateZ(-0.35deg)}
+  50%{transform:translateY(-13px) rotateZ(0.35deg)}
+}
 
 /* ---------- finale : 3D 30 + sparks ---------- */
 #finale{min-height:180svh}
@@ -310,7 +317,7 @@ footer{position:relative;z-index:10;text-align:center;padding:4rem 1.5rem 5rem;
           <figcaption><span class="no">No. 02</span></figcaption>
         </figure>
         <figure class="card tall rv d2" style="--ry:-4deg;--rx:3deg">
-          <div class="frame"><img src="_20190326_151915.jpg" alt="" loading="lazy"></div>
+          <div class="frame"><img src="no3.jpeg" alt="" loading="lazy"></div>
           <figcaption><span class="no">No. 03</span></figcaption>
         </figure>
       </div>
@@ -359,11 +366,11 @@ footer{position:relative;z-index:10;text-align:center;padding:4rem 1.5rem 5rem;
       </div>
 
       <div class="grid g2">
-        <figure class="card wide rv" style="--ry:5deg">
+        <figure class="card wide rv levi" style="--ry:5deg">
           <div class="frame"><video src="sibling%20(1).mp4" muted loop playsinline autoplay></video></div>
           <figcaption><span class="no">No. 08</span></figcaption>
         </figure>
-        <figure class="card wide offset rv d1" style="--ry:-5deg">
+        <figure class="card wide offset rv d1 levi" style="--ry:-5deg;--ld:1.2s">
           <div class="frame"><video src="sibling%20(2).mp4" muted loop playsinline autoplay></video></div>
           <figcaption><span class="no">No. 09</span></figcaption>
         </figure>
@@ -412,9 +419,9 @@ footer{position:relative;z-index:10;text-align:center;padding:4rem 1.5rem 5rem;
       </div>
 
       <div class="grid g2">
-        <figure class="card wide rv" style="--ry:-5deg">
+        <figure class="card wide rv levi" style="--ry:-5deg">
           <div class="frame">
-            <video src="20251213_121310_web.mp4" preload="none" playsinline controls poster="thumbs/20251213_121229.jpg"></video>
+            <video src="20251213_121310_web.mp4" autoplay muted loop playsinline preload="metadata" poster="thumbs/20251213_121229.jpg"></video>
           </div>
           <figcaption><span class="no">No. 16</span></figcaption>
         </figure>
@@ -483,17 +490,29 @@ footer{position:relative;z-index:10;text-align:center;padding:4rem 1.5rem 5rem;
       </div>
 
       <div class="grid g2">
-        <figure class="card wide rv" style="--ry:-5deg">
+        <figure class="card wide rv levi" style="--ry:-5deg">
           <div class="frame">
-            <video src="20251206_191600_web.mp4" preload="none" playsinline controls poster="thumbs/20251206_191628.jpg"></video>
+            <video src="20251206_191600_web.mp4" autoplay muted loop playsinline preload="metadata" poster="thumbs/20251206_191628.jpg"></video>
           </div>
           <figcaption><span class="no">No. 26</span></figcaption>
         </figure>
-        <figure class="card wide offset rv d1" style="--ry:5deg">
+        <figure class="card wide offset rv d1 levi" style="--ry:5deg;--ld:1.6s">
           <div class="frame">
-            <video src="20251207_162426_web.mp4" preload="none" playsinline controls poster="thumbs/20251207_162359.jpg"></video>
+            <video src="20251207_162426_web.mp4" autoplay muted loop playsinline preload="metadata" poster="thumbs/20251207_162359.jpg"></video>
           </div>
           <figcaption><span class="no">No. 27</span></figcaption>
+        </figure>
+        <figure class="card wide rv levi" style="--ry:5deg;--ld:.8s">
+          <div class="frame">
+            <video src="big%20boss.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <figcaption><span class="no">No. 28</span></figcaption>
+        </figure>
+        <figure class="card wide offset rv d1 levi" style="--ry:-5deg;--ld:2.4s">
+          <div class="frame">
+            <video src="biggest%20boss.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <figcaption><span class="no">No. 29</span></figcaption>
         </figure>
       </div>
     </div>
@@ -545,15 +564,15 @@ footer{position:relative;z-index:10;text-align:center;padding:4rem 1.5rem 5rem;
       <div class="grid g3">
         <figure class="card tall rv" style="--ry:-6deg">
           <div class="frame"><img src="WhatsApp Image 2026-07-12 at 12.58.59 AM.jpeg" alt="" loading="lazy"></div>
-          <figcaption><span class="no">No. 28</span></figcaption>
+          <figcaption><span class="no">No. 30</span></figcaption>
         </figure>
         <figure class="card tall offset rv d1" style="--ry:4deg">
           <div class="frame"><img src="WhatsApp Image 2026-07-12 at 12.59.38 AM.jpeg" alt="" loading="lazy"></div>
-          <figcaption><span class="no">No. 29</span></figcaption>
+          <figcaption><span class="no">No. 31</span></figcaption>
         </figure>
         <figure class="card tall rv d2" style="--ry:-4deg">
           <div class="frame"><img src="WhatsApp Image 2026-07-12 at 12.18.30 AM.jpeg" alt="" loading="lazy"></div>
-          <figcaption><span class="no">No. 30</span></figcaption>
+          <figcaption><span class="no">No. 32</span></figcaption>
         </figure>
       </div>
 
@@ -777,12 +796,14 @@ btn.addEventListener('click',function(e){
 });
 song.addEventListener('play',setBtn);
 song.addEventListener('pause',setBtn);
-/* duck music while a story video with sound plays */
-document.querySelectorAll('video[controls]').forEach(function(v){
-  v.addEventListener('play',function(){song.volume=0.12;});
-  v.addEventListener('pause',function(){song.volume=1;});
-  v.addEventListener('ended',function(){song.volume=1;});
-});
+/* all videos autoplay silently; only run the ones on (or near) screen */
+var vObs=new IntersectionObserver(function(en){
+  en.forEach(function(e){
+    if(e.isIntersecting){ e.target.play().catch(function(){}); }
+    else{ e.target.pause(); }
+  });
+},{rootMargin:'160px'});
+document.querySelectorAll('video').forEach(function(v){ vObs.observe(v); });
 
 /* ---------- splash ---------- */
 var splash=document.getElementById('splash');
